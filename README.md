@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-# Run Buddy Inc
-=======
-# run-buddy
->>>>>>> 82cde31a65a05899b212722dc09fde18e25efea5
+# Run Buddy, Inc
 
 ## Purpose
-A website that offers fitness training services.
+A website that offers fitness training services. 
 
 ## Built With
 * HTML
@@ -16,3 +12,5 @@ https://davevebber.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Dave Vebber
+
+### ©️2019 Run Buddy, Inc 
