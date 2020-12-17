@@ -322,6 +322,22 @@ section {
 
 /* end of trainer styles */
 
+/* grid container style starts */
+
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+
+/* grid container style ends */
+
 /* reach out styles start */
 
 .contact {
