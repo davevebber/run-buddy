@@ -207,14 +207,6 @@ section {
     border-color: #39a6b2;
 }
 
-.steps div{
-  
-}
-
-.steps img {
-
-}
-
 .step h3 {
     color: #024e76;
     font-size: 46px;
@@ -230,10 +222,6 @@ section {
     font-size: 26px;
     line-height: 1.5;
     color: #024e76
-}
-
-.steps span {
-
 }
 
 .step {
@@ -322,19 +310,59 @@ section {
 
 /* end of trainer styles */
 
-/* grid container style starts */
+/* grid container SERVICES style starts */
+
+.services {
+    background: #fce138;
+}
+
+.service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
 .service-grid-container {
+    background: lightyellow;
+    width: 80%;
     display: grid;
-}
+    /* repeat(iterator, size) */
+    grid-template-columns: 1fr repeat(2, 4fr);
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    border: 2px solid #024e76;
+    color:  #024e76;
+    font-size: 1.2rem;
+  }
 
-.service-grid-item {
-    width: 200px;
-    height: 50px;
-    background-color: orange;
-    border: solid;
-    color: black;
-}
+  .service-grid-item {
+      padding: 15px 0;
+      border: 2px solid #024e76;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* specific match */
+.service-grid-item.basic {
+    grid-column: 2 / span 1;
+  }
+
+.service-grid-item.both {
+    grid-column: 2 / span 2;
+  }
+
+.service-grid-item.cancel {
+    writing-mode: vertical-lr;
+    grid-column: 1;
+    grid-row: 1 / -1;
+    transform: rotate(180deg);
+  }
 
 /* grid container style ends */
 
@@ -450,6 +478,25 @@ section {
 
     .contact-info iframe {
         flex: 1 100%;
+    }
+
+    .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-grid-item.basic {
+        grid-column: 1;
+    }
+
+    .service-grid-item.both {
+        grid-column: 1 / -1;
+    }
+
+    .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1 / -1;
+        grid-row: -1;
     }
   }
 
